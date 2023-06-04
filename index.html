@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition System</title>
+</head>
+<style>
+body
+{
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-image:url({{url_for('static',filename='img/p1.jpg')}})
+}
+</style>
+<body>
+    <center>
+        <a href="/home">HOME</a>
+    <h1 style="color:tomato;">FACE RECOGNITION SYSTEM</h1>
+    <h2 style="color:red;">DO NOT DRINK AND DRIVE</h2>
+    <h3 style="color:blue;">SEE PROPERLY</h3>
+</center>
+    </body>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+</body>
+</html>
